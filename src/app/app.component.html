@@ -1,0 +1,91 @@
+<ng2-slim-loading-bar color="blue"></ng2-slim-loading-bar>
+<nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top ">
+  <a class="navbar-brand text-primary" routerLink="home" routerLinkActive="active"><h2>Event Management</h2></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link text-primary" routerLink="home" routerLinkActive="active">Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle  text-primary" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Account
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" routerLink="profile" routerLinkActive="active">Profile</a>
+          <a class="dropdown-item" routerLink="login" routerLinkActive="active">Login</a>
+          <a class="dropdown-item" routerLink="login" routerLinkActive="active">Log Out</a>
+          <a class="dropdown-item" routerLink="signup" routerLinkActive="active">Sign Up</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle  text-primary" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Event
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" routerLink="yourevents" routerLinkActive="active">Your Events</a>
+          <a class="dropdown-item" routerLink="bookedevents" routerLinkActive="active">Booked Events</a>
+          <a class="dropdown-item" routerLink="latestevents" routerLinkActive="active">Latest Events</a>
+          <a class="dropdown-item" routerLink="postevent" routerLinkActive="active">Post Event</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-primary"  routerLink="contact" routerLinkActive="active">contact</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-primary my-2 my-sm-0 bg " type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+
+<router-outlet ></router-outlet>
+<div class="card bg-dark text-primary text-center" style="width:100%;">
+  <div class="card-body">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <h3> <a class="text-primary"  routerLink="contact" routerLinkActive="active">About Us</a></h3>
+        </div>
+        <div class="col-sm">
+          <h3> <a class="text-primary"  routerLink="contact" routerLinkActive="active">Help</a></h3>
+        </div>
+        <div class="col-sm">
+          <h3> <a class="text-primary"  routerLink="contact" routerLinkActive="active">contact</a></h3>
+        </div>
+      </div>
+    </div>
+    <br>
+    <h6 class="text-center text-white align-content-center">
+      Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+      <br> accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+      <br>inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+      <br>voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.<br><br>
+    </h6>
+  </div>
+</div>
+<div class="card bg-secondary " style="width:100%;">
+  <div class="row">
+    <div class="col-sm">
+      <h5  class="text-center text-black-50">
+        &copy;<script>document.write(new Date().getFullYear());</script> Bhavin Parmar & Chirag Patel</h5>
+    </div>
+    <div class="col-sm ">
+      <h5 class="text-center text-black-50">Event Management</h5>
+    </div>
+    <div class="col-sm ">
+      <a href="#"><i class="fa-align-center fa  fa-facebook-square text-black-50"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="#"><i class="fa-align-center fa  fa-twitter-square text-black-50"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="#"><i class="fa-align-center fa  fa-google-plus-square text-black-50"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="#"><i class="fa-align-center fa  fa-instagram text-black-50"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="#"><i class="fa-align-center fa  fa-pinterest-square text-black-50"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="#"><i class="fa-align-center fa  fa-linkedin-square text-black-50"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+  </div>
+</div>

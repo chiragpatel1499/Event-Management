@@ -1,0 +1,40 @@
+<br><br>
+<div class="container">
+  <div class="row">
+    <div class="col-3">
+    </div>
+    <div class="col-6">
+      <form [formGroup] = "formdata" (ngSubmit)="onClickSubmit(formdata.value)">
+        <div class="card text-center ">
+          <div class="card-header text-primary bg-dark">
+            <h2>Login</h2>
+          </div>
+          <div class="card-body bg-dark">
+            <div class="example-container ">
+              <mat-form-field color="primary">
+                <input matInput placeholder="User Id" type="text" name="userid" formControlName="userid"/>
+              </mat-form-field>
+              <mat-form-field color="primary">
+                <input type="password" matInput placeholder="password" name="password" formControlName="password"/>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="card-body bg-dark">
+            <section class="example-section">
+              <mat-checkbox class="example-margin mat-primary text-white " >Remember me</mat-checkbox>
+            </section>
+            <div>
+              <a  class="-align-left text-white" routerLink="/forgotpassword" routerLinkActive="active">Forgot Password</a>
+            </div>
+          </div>
+          <div class="card-footer text-muted bg-dark">
+            <input type="submit" [disabled] = "!formdata.valid"  value="Login" class="btn btn-primary"/>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="col-3">
+    </div>
+  </div>
+</div>
+<br><br>
